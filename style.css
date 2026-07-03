@@ -1,23 +1,30 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98dvh;
 }
 
 .container {
-    margin: 20px;
-    max-width: 100dvw;
-    height: 98dvh;
+    width: 500px;
+    height: 500px;
     background-color: white;
     display: flex;
-    justify-content: space-evenly;
+
 }
 
 .divContainer {
     display: grid;
+    flex: 1;
 }
 
+.partOfGrid {
+    flex: 1;
+    border: 1px;
+}
