@@ -13,14 +13,11 @@ body {
     max-width: 100dvw;
     height: 98dvh;
     background-color: white;
-}
-
-.one16th {
-    display: grid;
-    height: calc(98 / 16)dvh;
-    align-items: center;
-}
-
-.partOfGrid {
     display: flex;
+    justify-content: space-evenly;
 }
+
+.divContainer {
+    display: grid;
+}
+
