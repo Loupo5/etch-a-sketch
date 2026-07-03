@@ -8,10 +8,14 @@ for (let j=0; j<16; j++) {
         div.classList.add("partOfGrid")
         div.style.width = "500/16px"
         div.style.height = "500/16px"
-        div.textContent = "NIGGAAA"
         divContainer.appendChild(div)
         div.addEventListener("mouseenter", (e) => {
-            div.style.backgroundColor = 'black'
+            div.style.backgroundColor = 'lightgreen'
         })
     }
 }
+
+const btn = document.querySelector("button")
+btn.addEventListener("click", (e) => {
+    let num = prompt("How many grids per side do you want?", 16)
+})

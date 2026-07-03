@@ -6,9 +6,18 @@
 body {
     background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 98dvh;
+}
+
+
+
+#input {
+    width: 250px;
+    height: 50px;
+    margin-bottom: 30px;
 }
 
 .container {
