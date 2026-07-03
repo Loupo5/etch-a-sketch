@@ -1,3 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: blue;
+    background-color: black;
+}
+
+.container {
+    margin: 20px;
+    max-width: 100dvw;
+    height: 98dvh;
+    background-color: white;
+}
+
+.one16th {
+    display: grid;
+    height: calc(98 / 16)dvh;
+    align-items: center;
+}
+
+.partOfGrid {
+    display: flex;
 }
