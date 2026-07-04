@@ -8,12 +8,15 @@ function makeGrid(num) {
         container.appendChild(divContainer)
         for (let i=0; i<num; i++) {
             const div = document.createElement("div")
+            let opacity = 0
             div.classList.add("partOfGrid")
             div.style.width = "(500/num)px"
             div.style.height = "(500/num)px"
             divContainer.appendChild(div)
-            div.addEventListener("mouseenter", (e) => {
-                div.style.backgroundColor = 'lightgreen'
+            div.addEventListener("mouseenter", () => {
+                div.style.backgroundColor = randomRGB()
+                opacity += 1
+                div.style.opacity = 1 - (opacity * 0.2)
             })
         }
     }
@@ -29,5 +32,14 @@ btn.addEventListener("click", (e) => {
 
     container.textContent = ""
     makeGrid(num)
-
 })
+
+function randomRGB() {
+    const r = Math.floor(Math.random() * 256)
+    const g = Math.floor(Math.random() * 256)
+    const b = Math.floor(Math.random() * 256)
+    return `rgb(${r}, ${g}, ${b})`
+
+}
+
+console.log(randomRGB())
